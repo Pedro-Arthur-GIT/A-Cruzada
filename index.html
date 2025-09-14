@@ -1,56 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to RPG Interativo</title>
-    <style>
-        body {
-            background: #222;
-            color: #f5f5f5;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .welcome-container {
-            background: #333;
-            padding: 2rem 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.4);
-            text-align: center;
-        }
-        h1 {
-            margin-bottom: 1rem;
-            font-size: 2.5rem;
-            color: #ffd700;
-        }
-        p {
-            margin-bottom: 2rem;
-            font-size: 1.2rem;
-        }
-        .start-btn {
-            background: #ffd700;
-            color: #222;
-            border: none;
-            padding: 0.75rem 2rem;
-            border-radius: 6px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .start-btn:hover {
-            background: #e6c200;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Interativo</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-H9oy0Yf3kCqTRp5z3iCQ5f3az/xn+xcbh4tOZpN/9Z3ym6/yoG3JpVZ5iV7lXGrX" crossorigin="anonymous">
+
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.js"></script>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="welcome-container">
-        <h1>Welcome to RPG Interativo!</h1>
-        <p>Embark on your adventure. Create your character and explore a world of possibilities!</p>
-        <button class="start-btn" onclick="window.location.href='CharacterCreation.html'">Start Adventure</button>
+
+    <div class="navbar">
+
+        <div>
+            <h2>RPG Interativo</h2>
+
+        </div>
+
+        <!-- Botão de Dark/Light Mode -->
+        <button id="toggleButton">
+            <i data-lucide="moon"></i>
+            <i data-lucide="sun" class="hidden"></i>
+        </button>
+
     </div>
+
+
+    <!-- Container principal (A4) -->
+    <div id="flex-wrapper">
+        <div class="main-container">
+            <h1>Welcome to RPG Interativo!</h1>
+            <p>Embark on your adventure. Create your character and explore a world of possibilities!</p>
+            <button class="start-btn" onclick="window.location.href='CharacterCreation.html'">Start Adventure</button>
+        </div>
+    </div>    
+
+    <!-- JS externo -->
+    <script src="script.js"></script>
 </body>
 </html>
