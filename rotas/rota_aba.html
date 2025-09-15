@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota A B A</title>
+
+        <!-- CSS crítico inline para temas -->
+  <style>
+    /* Esconde todo o conteúdo até o tema ser aplicado */
+    html { visibility: hidden; }
+
+    /* Temas */
+    html.light-mode { background: #f3f3f3; color: #000; }
+    html.dark-mode  { background: #222; color: #eee; }
+
+    /* Evita transições durante o carregamento */
+    html, body { transition: none; }
+  </style>
+
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.classList.add(theme + '-mode');
+      document.documentElement.style.visibility = 'visible';
+    })();
+  </script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-H9oy0Yf3kCqTRp5z3iCQ5f3az/xn+xcbh4tOZpN/9Z3ym6/yoG3JpVZ5iV7lXGrX" crossorigin="anonymous">
+
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.js"></script>
+
+    <!-- CSS externo do projeto -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Opcional: Script do toggle do tema -->
+    <script src="../theme-toggle.js" defer></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <h2>
+            <a href="../index.html" title="Voltar à página inicial do RPG Interativo">
+                RPG Interativo
+            </a>
+        </h2>
+        
+        <!-- Botão de Dark/Light Mode -->
+        <button id="toggleButton">
+            <i data-lucide="moon"></i>
+            <i data-lucide="sun" class="hidden"></i>
+        </button>
+
+    </div>
+
+
+    <!-- Container principal (A4) -->
+    <div id="flex-wrapper">
+        <div class="main-container">
+        <div class="left-zone"></div>
+        <div class="right-zone"></div>
+            <div class="markdown-content" id="markdownContainer">
+                
+
+<p><strong>Acerto ineficaz</strong></p>
+<p>Você atira a lança, fincando-a no braço do dragão, mas sem muito efeito. A besta mal lhe dá atenção e volta a atacar seus companheiros, rasgando-os com suas presas e garras. Taragorn está agitado, e por isso o machado e a lança cravadas em seus braços estão inacessíveis. Sua única opção é a espada. Felizmente, por não ter conseguido um bom acerto, Taragorn não se foca em você, e você tem tempo para se preparar para atacar novamente.  </p>
+<p>Várias outras lanças voam em direção a Taragorn, e seus ferimentos foram se acumulando. O dragão começa a sentir os ataques e recua com um salto e uma leve planada. Alguns homens bradam, acreditando que o dragão está acuado, mas um segundo depois a fera arreganha sua boca, e por entre seus dentes, labaredas incandescentes ganharam o ar. Você corre, sabendo que um toque do ar dourado-avermelhado significaria sua morte.  </p>
+<p>Vários gritos de dor soam, várias vidas se perdem. Poucos foram os homens sortudos o bastante para sobreviverem ao ataque da besta, menos ainda foram os bravos o bastante para não desistirem da batalha a essa altura. Você está no chão, tentando se proteger das chamas, sentindo dezenas de pares de pernas pisoteando-o e ouvindo um coro sinistro de gritos amedrontados. Você tenta se levantar, mas sua armadura só não está mais pesada que os corpos carbonizados que despencam sobre você. </p>
+<p>Muito tempo se passa e você sequer consegue se mover. O dragão berra, homens gritam, mas você não consegue ver direito o que está acontecendo. O calor se intensifica, você se sente dentro de uma enorme fogueira. Sua armadura se transforma em uma chapa aquecida, fritando sua pele. Você sente dor, mas não consegue gritar. Por fim, depois de muito se sentir sufocado em meio às chamas, você desmaia, sentindo o mundo girando ao seu redor. </p>
+<p>Quando seus olhos finalmente se abrem, você sente o peso sobre você diminuindo. Homens estão removendo os corpos sobre você e o desenterrando da pilha de cadáveres.  </p>
+<p>— Há mais um vivo aqui! — Um deles grita. </p>
+<p>Você não consegue responder, mas eles o ajudam a levantar. Quando olha para o lado, você vê dezenas de corpos ao longo do campo. O que um dia foi verde e bela agora é apenas uma mancha enegrecida rica em corpos ainda mais enegrecidos pelas chamas de Taragorn. Você é colocado em uma carruagem e levado. Sua armadura chamuscada é deixada para trás, assim como sua espada agora sem lâmina depois da batalha. Você sabe que aqueles homens não estavam na batalha, e pior, você não sabe quantos dos seus companheiros sobreviveram a ela. </p>
+<p><strong>Parabéns! Você chegou ao fim do prólogo. Você sobreviveu ao terrível dragão cinzento. Infelizmente você não foi capaz de desferir um golpe fatal em seu inimigo, mas não fique triste, sua aventura continua. Sua chance de dar fim a praga do último dragão vivo ainda está por vir.</strong> </p>
+<p><strong>Fim do prólogo</strong></p> 
+
+
+            </div>
+            <!-- <div class="pagination-controls">
+                <button class="prev-btn" id="prevBtn">Anterior</button>
+                <button class="next-btn" id="nextBtn">Próxima</button>
+            </div> -->
+        </div>
+    </div> 
+
+    <!-- JS externo -->
+    <script src="../script.js"></script>
+</body>
+</html>
+

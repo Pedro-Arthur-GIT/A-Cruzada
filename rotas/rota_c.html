@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota C</title>
+
+        <!-- CSS crítico inline para temas -->
+  <style>
+    /* Esconde todo o conteúdo até o tema ser aplicado */
+    html { visibility: hidden; }
+
+    /* Temas */
+    html.light-mode { background: #f3f3f3; color: #000; }
+    html.dark-mode  { background: #222; color: #eee; }
+
+    /* Evita transições durante o carregamento */
+    html, body { transition: none; }
+  </style>
+
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.classList.add(theme + '-mode');
+      document.documentElement.style.visibility = 'visible';
+    })();
+  </script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-H9oy0Yf3kCqTRp5z3iCQ5f3az/xn+xcbh4tOZpN/9Z3ym6/yoG3JpVZ5iV7lXGrX" crossorigin="anonymous">
+
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.js"></script>
+
+    <!-- CSS externo do projeto -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Opcional: Script do toggle do tema -->
+    <script src="../theme-toggle.js" defer></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <h2>
+            <a href="../index.html" title="Voltar à página inicial do RPG Interativo">
+                RPG Interativo
+            </a>
+        </h2>
+        
+        <!-- Botão de Dark/Light Mode -->
+        <button id="toggleButton">
+            <i data-lucide="moon"></i>
+            <i data-lucide="sun" class="hidden"></i>
+        </button>
+
+    </div>
+
+
+    <!-- Container principal (A4) -->
+    <div id="flex-wrapper">
+        <div class="main-container">
+        <div class="left-zone"></div>
+        <div class="right-zone"></div>
+            <div class="markdown-content" id="markdownContainer">
+                
+
+<p>Você optou por recuar e tentar fugir pela retaguarda. </p>
+<p>Um dragão é demais para você. Em seu coração você sabe que apenas morte o aguarda à frente. Os deuses sabem que você se voluntariou para uma boa causa, mas por mais que você seja corajoso, seu instinto de autopreservação é mais forte. Assim que os primeiros homens avançam contra a fera e a fera avança de volta contra vocês, seu primeiro reflexo é o de recuar alguns passos e dar as costas para a batalha. O general, o homem que comandava aquela tropa, o olha com insatisfação. </p>
+<p>— O inimigo está à frente, covarde! — Ele grita. </p>
+<p>Por mais que você queira manter sua honra e dar sua vida em prol do sucesso da caçada, suas pernas se movem sozinhas e você corre para longe, passando tanto pelo general quanto pelos homens ao fim da última linha da formação.  </p>
+<p><strong>Atualização de estado: você fugiu da batalha antes mesmo de ela começar. Sua covardia será lembrada por todos e ninguém jamais o respeitará.</strong> 
+<strong> Você adquiriu o bilhete da Rota “The Coward”.</strong> </p>
+<h3>TUTORIAL - ATUALIZAÇÃO DE ESTADO</h3>
+
+<p><strong>Em certas decisões, o texto indicará “atualização de estado”. Isso significa que suas ações causaram uma marca na história e uma decisão futura pode ser bloqueada ou desbloqueada.</strong> 
+<strong>Guarde essa atualização, ela será importante mais à frente.</strong> </p>
+<h3>FIM DO TUTORIAL</h3>
+
+<p>A mata à sua frente parece estar se aproximando conforme você foge. Sua mente vagou pela imagem de seus companheiros sendo louvados em canções enquanto seu nome ser dito antes que alguém escarrar e cuspir em uma poça de lama. Esse pensamento se desfez quando você concluiu pelos gritos longínquos atrás de você que ninguém sobreviveria para revelar o nome do covarde que abandonou a batalha e deixou seus companheiros para trás. Que diferença você faria, afinal? Você é apenas um único homem, nunca enfrentou nada tão poderoso quanto um dragão, sequer imaginava que fosse possível uma dessas feras voltar a existir nesse mundo onde outrora a paz se fazia tão presente.  </p>
+<p>Você se distanciou o bastante para deixar de ouvir brados, berros e gritos, ou talvez a batalha simplesmente tivesse tido fim. De uma forma ou de outra, você novamente se sentiu seguro, pois você era insignificante demais para o dragão se dar ao trabalho de caçá-lo.  </p>
+<p>Exausto de tanto correr, você se senta sobre sob a sombra de uma árvore para descansar. Você esfrega os olhos, tentando provar a si mesmo que a fera demoníaca que acabara de ver foi apenas um sonho, uma ilusão, mas você ainda sente seus dedos apertando suas órbitas, e isso quer dizer que você está acordado e tudo foi bem real. Seus pensamentos são obstruídos quando aos céus uma mancha de cor dourado-avermelhado abraça as nuvens, e você percebe que o hálito do dragão é um sopro de morte incandescente tão temível quanto nas lendas. Tamanha distância e ainda assim parece que você pode sentir na pele o calor.  </p>
+<p>Pouco depois, quando tudo parecia se acalmar, sua mente começa a pensar com mais clareza e o arrependimento começa a martelar sua mente. Como pôde fugir da batalha com o rabo entre as pernas como se fosse um cãozinho assustado? Vergonha é um sentimento nobre demais para ilustrar o momento em que você estava. </p>
+<ul>
+    <li><a href="rota_ca.html">Dar a volta e retornar ao campo de batalha</a></li>
+    <li><a href="rota_cb.html">Ir embora</a></li>
+</ul> 
+
+
+            </div>
+            <!-- <div class="pagination-controls">
+                <button class="prev-btn" id="prevBtn">Anterior</button>
+                <button class="next-btn" id="nextBtn">Próxima</button>
+            </div> -->
+        </div>
+    </div> 
+
+    <!-- JS externo -->
+    <script src="../script.js"></script>
+</body>
+</html>
+

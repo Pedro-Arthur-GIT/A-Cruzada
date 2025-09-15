@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota B A A</title>
+
+        <!-- CSS crítico inline para temas -->
+  <style>
+    /* Esconde todo o conteúdo até o tema ser aplicado */
+    html { visibility: hidden; }
+
+    /* Temas */
+    html.light-mode { background: #f3f3f3; color: #000; }
+    html.dark-mode  { background: #222; color: #eee; }
+
+    /* Evita transições durante o carregamento */
+    html, body { transition: none; }
+  </style>
+
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.classList.add(theme + '-mode');
+      document.documentElement.style.visibility = 'visible';
+    })();
+  </script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-H9oy0Yf3kCqTRp5z3iCQ5f3az/xn+xcbh4tOZpN/9Z3ym6/yoG3JpVZ5iV7lXGrX" crossorigin="anonymous">
+
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.js"></script>
+
+    <!-- CSS externo do projeto -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Opcional: Script do toggle do tema -->
+    <script src="../theme-toggle.js" defer></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <h2>
+            <a href="../index.html" title="Voltar à página inicial do RPG Interativo">
+                RPG Interativo
+            </a>
+        </h2>
+        
+        <!-- Botão de Dark/Light Mode -->
+        <button id="toggleButton">
+            <i data-lucide="moon"></i>
+            <i data-lucide="sun" class="hidden"></i>
+        </button>
+
+    </div>
+
+
+    <!-- Container principal (A4) -->
+    <div id="flex-wrapper">
+        <div class="main-container">
+        <div class="left-zone"></div>
+        <div class="right-zone"></div>
+            <div class="markdown-content" id="markdownContainer">
+                
+
+<p>Você optou por golpear a perna do homem ao seu lado para que ele sirva de 
+distração para o dragão. </p>
+<p>Talvez não a mais nobre das ações, mas com certeza a que pode salvar sua vida. Você tem sua espada em mãos, o dragão está nos seus calcanhares. Sua mente sequer lhe avisou o que tramava, e um segundo depois, quase em um ato involuntário, sua espada voa na coxa de um de seus companheiros, fazendo-o cair, e isso foi como jogar uma minhoca em um anzol para um peixe faminto. O dragão, cego de raiva, por um instante ignora completamente você e os outros que fogem e abocanha o homem que caiu quase aos seus pés. </p>
+<p>Você ouve os gritos de alguns dos homens aterrorizados próximos a você, e conforme corre, você percebe que os gritos vão ficando para trás e morrendo, assim como o homem que você ofertou ao dragão em troca de sua própria vida. Pouco a frente, quando suas pernas já sugaram completamente suas forças, você avista um rio. Aquela imagem é como ver a mão estendida do Deus das Serenas Águas lhe ofertando ajuda. Sem ter qualquer outra opção, antes mesmo que você possa perceber, você se atira no rio, afundando até o solo rochoso sob as águas graças ao peso de sua armadura. </p>
+<p>Você tenta desesperadamente arrancar a armadura de si, mas mesmo a tirando, você não a larga, pois precisava do peso dela para permanecer submerso e fora da vista de Taragorn. Quando você olha para cima, vê apenas um mar de chamas adentrando as águas e sente o calor de mil sóis sobre sua cabeça. Você está literalmente cozinhando vivo, e quando o calor e a falta de ar se tornam insuportáveis, você solta o peitoral metálico de sua armadura, a única coisa que o mantinha debaixo d’água.  </p>
+<p>Você emerge, engole uma golfada de ar quente e se sente tonto. Você tosse, atordoado, quase sem forças, e tenta chegar à margem do rio. De relance você vê o dragão, vê homens ainda tentando fugir. Felizmente para você o dragão foi despistado, mas já não lhe resta mais forças sequer para sair da água. A leve correnteza acaba o puxando, e quando você percebe, já está sendo levado rio abaixo. Um instante depois, você desmaia, e tudo parece deixar de existir... </p>
+<p><strong>Parabéns. Você chegou ao fim do prólogo. Você conseguiu sobreviver ao terrível dragão cinzento. Infelizmente você não foi capaz de fazer frente contra seu inimigo, mas não fique triste, sua aventura continua. Sua chance de dar fim a praga do último dragão vivo ainda está por vir.</strong> </p>
+<p><strong>Fim do prólogo.</strong> </p> 
+
+
+            </div>
+            <!-- <div class="pagination-controls">
+                <button class="prev-btn" id="prevBtn">Anterior</button>
+                <button class="next-btn" id="nextBtn">Próxima</button>
+            </div> -->
+        </div>
+    </div> 
+
+    <!-- JS externo -->
+    <script src="../script.js"></script>
+</body>
+</html>
+

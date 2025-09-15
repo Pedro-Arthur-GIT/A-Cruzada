@@ -369,3 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+//impedir voltar à pagina anterior com o botão do navegador
+window.onpopstate = function () {
+  window.location.href = "index.html";
+};

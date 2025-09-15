@@ -1,6 +1,4 @@
-Rota A-A 
- 
-Você optou pela Rota A-A, avançar contra a criatura com sua espada. 
+Você optou por avançar contra a criatura com sua espada. 
  
 Você imagina que nem machados nem lanças serão tão eficazes quanto sua boa e velha espada e avança com ela em punho. Seu primeiro golpe atinge a perna do dragão, e tão afiada sua lâmina é que perfura de leve uma das escamas. O dragão berra, deixando cair os restos mortais do homem em sua boca, e tomando de exemplo seu ato de bravura, vários outros cavaleiros avançam com espadas em punho em direção da fera. O dragão fica atordoado por um instante, pois, desde sua primeira aparição, era a primeira vez que seus combatentes não recuavam facilmente quando a besta demonstrava seus terríveis hábitos de brutalidade. 
  
@@ -8,4 +6,4 @@ A fera recua quando alguns homens atacam suas as pernas, mas o salto que ela deu
  
 Todo o campo foi tomado belo berro de dor da criatura, que finalmente demonstra a reação de um dano formidável, mas tudo dura apenas um segundo. Taragorn se levanta furioso, e suas potentes e gigantescas asas se abrem e golpeiam o ar, o que fez a criatura ganhar os céus. Quando vários dos soldados olham abismados para cima, veem apenas a boca da besta se abrindo, e uma luz carmesim emana dela e é exalada como um feixe de morte. O cheiro de enxofre adentra suas narinas, porém esse pé o menor dos seus problemas. Um segundo depois, chamas bruxuleantes o abraçam, e mais um segundo depois, sua armadura começa a derreter, grudando em sua pele, e quando toda a pele por fim se queima, o metal derretido se gruda em sua carne. A última coisa que você ouve são seus próprios berros de dor em protesto ao fogo que o consumia. 
  
-Game over. Você morreu. Retorne para o início do Prólogo e tente novamente. 
+Game over. Você morreu. Retorne para o <a href="inicio.html">início</a> do Prólogo e tente novamente. 

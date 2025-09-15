@@ -1,6 +1,4 @@
-Rota A 
- 
-Você optou pela Rota A, avançar com a linha de frente. 
+Você optou por avançar com a linha de frente. 
  
 Você ergue sua espada, infla os pulmões e avança em um brado coletivo com seus companheiros. A fera não se deixa abalar pelo ímpeto de criaturas tão insignificantes quanto os humanos e salta em direção a vocês. Quatro cavaleiros são esmagados pela queda da criatura, depois mais seis perdem suas vidas quando o dragão os golpeia com um de seus imensos braços. Lanças, fechas e machados voam rumo ao focinho da besta, mas tal é o terror que todos sentem na pele que nenhum homem ali consegue fazer mira certeira. Alguns homens recuam alguns metros, temerosos, mas você permanece de pé, frente a frente forma física do Deus da Morte. Ele olha para você e para os poucos corajosos homens que permanecem ao seu lado e se prepara para atacar. 
  

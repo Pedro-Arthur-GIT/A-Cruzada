@@ -1,16 +1,16 @@
-Rota A-B-C
- 
-Acerto crítico. 
+**Acerto crítico.** 
  
 Você atira a lança com toda a força de seus braços e atinge o olho direito da criatura, e seu grito bestial confessa que o dragão sentiu verdadeiramente a dor do golpe. 
  
-Atualização de estado: Tagadorn perdeu o olho direito.  
- Você conquistou o bilhete da rota “Dragon Eye”. 
+**Atualização de estado: Tagadorn perdeu o olho direito.** 
+** Você conquistou o bilhete da rota “Dragon Eye”.** 
  
-[TUTORIAL - ATUALIZAÇÃO DE ESTADO] 
-Em certas decisões, o texto indicará “atualização de estado”. Isso significa que suas ações causaram uma marca na história e uma decisão futura pode ser bloqueada ou desbloqueada. 
-Guarde essa atualização, ela será importante mais à frente. 
-[FIM DO TUTORIAL] 
+<h3>TUTORIAL - ATUALIZAÇÃO DE ESTADO</h3> 
+
+**Em certas decisões, o texto indicará “atualização de estado”. Isso significa que suas ações causaram uma marca na história e uma decisão futura pode ser bloqueada ou desbloqueada.** 
+
+**Guarde essa atualização, ela será importante mais à frente.**
+<h3>FIM DO TUTORIAL</h3>
  
 Infelizmente, apesar de certeiro, o ataque não foi capaz de deter o dragão. Taragorn agora está furioso e é tomado por um impulso ensandecido. O dragão berra, golpeando quem quer que esteja próximo a ele, e com suas garras ele golpeia a lança e a arranca de seu globo ocular. As narinas da criatura sugam o ar com força, e quando ele o exala, não é apenas ar que saem de seus pulmões, mas uma língua de fogo incandescente. Um tapete flamejante é estendido sobre o campo, dezenas de homens correm por suas vidas, e você, tomado pelo impulso e pelo instinto de finalizar seu inimigo, corre em direção à besta. 
  
@@ -22,16 +22,16 @@ Você remove sua armadura para ter mais mobilidade para correr e a deixa atrás 
  
 Quando tudo se acalma, você olha para o que restou de sua armadura. Ela poderia ajudar você a sobreviver a um golpe, mas não serviria de nada contra a maior arma do dragão. 
  
-Atualização de estado: você decide que armaduras não são defesa eficazes contra o dragão.  
-•Você conquistou o bilhete da rota “Defenceless Knight”. 
+**Atualização de estado: você decide que armaduras não são defesa eficazes contra o dragão.**  
+- **Você conquistou o bilhete da rota “Defenceless Knight”.** 
  
 Tudo o que lhe resta é verificar os corpos em busca de mais algum sobrevivente, mas poucos ainda respiravam após enfrentarem a fúria de Taragorn. Ainda assim esses poucos admiravam sua bravura, pois você fez frente ao dragão como nenhum outro homem ali. 
  
-Atualização de estado: os sobreviventes da batalha agora o admiram. 
-•Você conquistou o bilhete da rota “A Brave Warrior”. 
+**Atualização de estado: os sobreviventes da batalha agora o admiram.** 
+- **Você conquistou o bilhete da rota “A Brave Warrior”.** 
  
 Um tempo depois um grupo de homens surge e começa a revirar os corpos, analisando o estrago feito pelo dragão. Eles vão até os poucos sobreviventes, e estes contam o que aconteceu. Após você e o que restou de seus companheiros embarcarem em carruagens, todos são levados para longe dos campos de morticínio para se recuperarem e lutarem um dia a mais. 
  
-Parabéns. Você chegou ao fim do prólogo. Você lutou bravamente até o fim e desferiu um golpe que cegou parcialmente o terrível dragão cinzento. Infelizmente você não foi capaz de desferir um golpe fatal em seu inimigo, mas não fique triste, sua aventura continua. Sua chance de dar fim a praga do último dragão vivo ainda está por vir. 
- 
-Fim do prólogo. Avance para o Ato 1-A (em produção). 
+**Parabéns. Você chegou ao fim do prólogo. Você lutou bravamente até o fim e desferiu um golpe que cegou parcialmente o terrível dragão cinzento. Infelizmente você não foi capaz de desferir um golpe fatal em seu inimigo, mas não fique triste, sua aventura continua. Sua chance de dar fim a praga do último dragão vivo ainda está por vir.**
+
+**Fim do prólogo.**

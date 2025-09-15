@@ -67,12 +67,6 @@ body.dark-mode {
 }
 
 
-@media (max-width: 900px) {
-    .main-container {
-        width: 90vw;
-        padding: 1rem 1.5rem;
-    }
-}
 
 h1 {
     margin-bottom: 1rem;
@@ -175,12 +169,22 @@ body.dark-mode .navbar {
     text-indent: 2em;
 }
 
+.markdown-content p > a {
+    color: red;
+}
+
+
 /* fade-top-line-by-line */
 .markdown-content p, ul {
   display: block;
   opacity: 0;
   transform: translateY(-10px);
   animation: fadeLine 0.5s forwards;
+}
+
+.markdown-content ul {
+    font-size: inherit;
+    margin-right: 1em;
 }
 
 .markdown-content p:nth-child(1) { animation-delay: 0s; }
@@ -201,7 +205,7 @@ body.dark-mode .navbar {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 5%;           /* tamanho da área clicável */
+    width: 2vw;           /* tamanho da área clicável */
     cursor: pointer;
     z-index: 10;
 }
@@ -215,7 +219,18 @@ body.dark-mode .navbar {
 }
 
 /* opcional: para teste, deixa as zonas semi-transparentes */
-.left-zone { background: rgba(255,0,0,0.1); }
+/* .left-zone { background: rgba(255,0,0,0.1); }
 .right-zone { background: rgba(0,0,255,0.1); }
 .left-zone:hover { background: rgba(255,0,0,0.2); }
-.right-zone:hover { background: rgba(0,0,255,0.2); }
+.right-zone:hover { background: rgba(0,0,255,0.2); } */
+
+@media (max-width: 900px) {
+    .main-container {
+        width: 90vw;
+        padding: 1rem 1.5rem;
+    }
+
+    .left-zone, .right-zone {
+    width: 10vw;           /* tamanho da área clicável */
+    }
+}
