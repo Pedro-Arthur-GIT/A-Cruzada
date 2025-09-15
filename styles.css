@@ -63,6 +63,7 @@ body.dark-mode {
     overflow: hidden;              /* evita overflow externo */
     padding: 1rem;
     box-sizing: border-box;
+    position: relative; /* para posicionamento absoluto das zonas */
 }
 
 
@@ -157,41 +158,64 @@ body.dark-mode .navbar {
 .hidden { display: none; }
 
 .markdown-content {
-    font-family: 'Segoe UI', Arial, sans-serif; /* Fonte legível */
-    line-height: 1.6; /* Espaçamento entre linhas */
-    margin-bottom: 1em;    /* Espaçamento entre parágrafos */
-    text-align: justify; /* Justifica o texto */
-    color: inherit;  /*herda a cor do body (light ou dark) */
-    overflow: hidden; /* Evita overflow */
-    max-height: 75vh; /* Altura máxima */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    text-align: justify;
+    color: inherit;
+    overflow: hidden; /* necessário para mask */
+    max-height: 75vh;
     padding: 1rem;
-    transition: max-height 0.3s ease;
+    position: relative; /* necessário para a animação */
+    display: block;
 }
 
+/* recuo no parágrafo */
 .markdown-content > p {
-text-indent: 2em;      /* Recuo na primeira linha */
+    text-indent: 2em;
 }
 
-/* Botões */
-.pagination-controls {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 1rem;
-    margin-top: auto; /* empurra para o fim do container */
+/* fade-top-line-by-line */
+.markdown-content p, ul {
+  display: block;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeLine 0.5s forwards;
 }
 
-.prev-btn, .next-btn {
-    padding: 0.5rem 1rem;
+.markdown-content p:nth-child(1) { animation-delay: 0s; }
+.markdown-content p:nth-child(2) { animation-delay: 0.1s; }
+.markdown-content p:nth-child(3) { animation-delay: 0.2s; }
+
+@keyframes fadeLine {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Zonas clicáveis esquerda e direita */
+.left-zone, .right-zone {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5%;           /* tamanho da área clicável */
     cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 6px;
+    z-index: 10;
 }
 
-.prev-btn:disabled, .next-btn:disabled {
-    opacity: 0.5;
-    cursor: default;
+.left-zone {
+    left: 0;
 }
 
+.right-zone {
+    right: 0;
+}
+
+/* opcional: para teste, deixa as zonas semi-transparentes */
+.left-zone { background: rgba(255,0,0,0.1); }
+.right-zone { background: rgba(0,0,255,0.1); }
+.left-zone:hover { background: rgba(255,0,0,0.2); }
+.right-zone:hover { background: rgba(0,0,255,0.2); }

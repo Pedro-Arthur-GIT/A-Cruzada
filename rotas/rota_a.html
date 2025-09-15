@@ -5,15 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rota A</title>
 
+        <!-- CSS crítico inline para temas -->
+    <!-- CSS crítico inline para temas -->
+    <style>
+        html.light-mode { background: #f3f3f3; color: #000; }
+        html.dark-mode  { background: #222;    color: #eee; }
+        html.blue-mode  { background: #1e3a8a; color: #fff; }
+
+        /* impede transição durante o carregamento */
+        html { transition: none; visibility: hidden; }
+
+        body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+    </style>
+
+    <!-- Script inline para aplicar o tema antes do render -->
+    <script>
+        (function() {
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.classList.add(savedTheme + '-mode');
+        document.documentElement.style.visibility = 'visible'; // mostra a página só depois
+        })();
+    </script>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-H9oy0Yf3kCqTRp5z3iCQ5f3az/xn+xcbh4tOZpN/9Z3ym6/yoG3JpVZ5iV7lXGrX" crossorigin="anonymous">
 
     <!-- Lucide Icons -->
     <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.js"></script>
 
-    <!-- CSS externo -->
+    <!-- CSS externo do projeto -->
     <link rel="stylesheet" href="../styles.css">
+
+    <!-- Opcional: Script do toggle do tema -->
+    <script src="../theme-toggle.js" defer></script>
 </head>
+
 <body>
 
     <div class="navbar">
@@ -36,6 +62,8 @@
     <!-- Container principal (A4) -->
     <div id="flex-wrapper">
         <div class="main-container">
+        <div class="left-zone"></div>
+        <div class="right-zone"></div>
             <div class="markdown-content" id="markdownContainer">
                 
 
@@ -52,10 +80,10 @@
 
 
             </div>
-            <div class="pagination-controls">
+            <!-- <div class="pagination-controls">
                 <button class="prev-btn" id="prevBtn">Anterior</button>
                 <button class="next-btn" id="nextBtn">Próxima</button>
-            </div>
+            </div> -->
         </div>
     </div> 
 
