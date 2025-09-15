@@ -51,27 +51,24 @@ body.dark-mode {
     box-sizing: border-box;
 }
 
-/* Container principal com proporção A4 */
+/* Container A4 */
 .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 33.33vw;                /* largura principal */
+    aspect-ratio: 210 / 297;       /* mantém proporção A4 */
     background: #e7dfd0;
-    padding: 1rem 3rem;
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.4);
-    text-align: center;
-    aspect-ratio: 210 / 297;
-    width: 33.33vw;
-    max-height: 80vh;
-    height: auto;
-    -ms-flex-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;              /* evita overflow externo */
+    padding: 1rem;
+    box-sizing: border-box;
 }
+
 
 @media (max-width: 900px) {
     .main-container {
-        width: 70vw;
+        width: 90vw;
         padding: 1rem 1.5rem;
     }
 }
@@ -82,8 +79,8 @@ h1 {
 }
 
 p {
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+    margin-bottom: 1.6rem;
+    font-size: 0.8rem;
 }
 
 .start-btn {
@@ -116,6 +113,16 @@ p {
     background: #e7dfd0;
 }
 
+.navbar a {
+    color: inherit;        /* mantém a cor original do texto */
+    text-decoration: none; /* remove underline padrão */
+    transition: text-decoration 0.2s ease;
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* underline apenas no hover */
+}
+
 /* Dark mode ajustes internos */
 body.dark-mode .main-container {
     background: #444;
@@ -134,4 +141,57 @@ body.dark-mode .navbar {
     background: #3f3f3f;
 }
 
+.main-container a {
+    justify-self: end;
+    list-style-type: circle;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-container a:hover {
+    text-decoration: underline;
+}
+
 .hidden { display: none; }
+
+.markdown-content {
+    font-family: 'Segoe UI', Arial, sans-serif; /* Fonte legível */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin-bottom: 1em;    /* Espaçamento entre parágrafos */
+    text-align: justify; /* Justifica o texto */
+    color: inherit;  /*herda a cor do body (light ou dark) */
+    overflow: hidden; /* Evita overflow */
+    max-height: 75vh; /* Altura máxima */
+    padding: 1rem;
+    transition: max-height 0.3s ease;
+}
+
+.markdown-content > p {
+text-indent: 2em;      /* Recuo na primeira linha */
+}
+
+/* Botões */
+.pagination-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+    margin-top: auto; /* empurra para o fim do container */
+}
+
+.prev-btn, .next-btn {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.prev-btn:disabled, .next-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
