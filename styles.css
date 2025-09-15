@@ -2,7 +2,7 @@
 
 /* Corpo padrão (modo light) */
 body {
-    background: #f3f3f3;
+    background: #e7dfd0;
     color: #000000;
     font-family: 'Segoe UI', Arial, sans-serif;
     display: flex;
@@ -55,7 +55,7 @@ body.dark-mode {
 .main-container {
     width: 33.33vw;                /* largura principal */
     aspect-ratio: 210 / 297;       /* mantém proporção A4 */
-    background: #e7dfd0;
+    background: #f3f3f3;
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.4);
     display: flex;
@@ -111,7 +111,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #e7dfd0;
+    background: #f3f3f3;
 }
 
 .navbar a {
