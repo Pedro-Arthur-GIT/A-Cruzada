@@ -27,7 +27,10 @@ body.dark-mode {
   width: 2rem;
   height: 2rem;           /* espaçamento interno */
   cursor: pointer;              /* indica que é clicável */ 
+  align-items: center;        /* centraliza ícone */
   transition: background 0.3s;
+  display: flex;               /* ativa Flexbox */
+  justify-content: center;     /* centraliza horizontalmente */
 }
 
 #toggleButton:hover {
@@ -62,7 +65,7 @@ body.dark-mode {
     flex-direction: column;
     overflow: hidden;              /* evita overflow externo */
     padding: 1rem;
-    box-sizing: border-box;
+    box-sizing: border-box; /* inclui padding na largura */
     position: relative; /* para posicionamento absoluto das zonas */
 }
 
@@ -75,18 +78,23 @@ h1 {
 
 p {
     margin-bottom: 1.6rem;
-    font-size: 0.8rem;
 }
 
 .start-btn {
+    display: block;      /* transforma em block */
+    margin: 0.5em auto;
+    width: fit-content;
+    height: fit-content;
     background: #707070;
     color: #ffffff;
     border: none;
-    padding: 0.75rem 2rem;
+    padding: 0.5rem 1rem;
     border-radius: 6px;
-    font-size: 1.1rem;
+    font-size: clamp(0.6rem, 1vw, 1rem);
     cursor: pointer;
     transition: background 0.2s;
+
+
 }
 
 
@@ -162,6 +170,7 @@ body.dark-mode .navbar {
     padding: 1rem;
     position: relative; /* necessário para a animação */
     display: block;
+    font-size: 0.9rem;
 }
 
 /* recuo no parágrafo */
@@ -185,6 +194,8 @@ body.dark-mode .navbar {
 .markdown-content ul {
     font-size: inherit;
     margin-right: 1em;
+    position: absolute;
+    bottom: 0;         /* empurra para o fundo */
 }
 
 .markdown-content p:nth-child(1) { animation-delay: 0s; }
@@ -233,4 +244,19 @@ body.dark-mode .navbar {
     .left-zone, .right-zone {
     width: 10vw;           /* tamanho da área clicável */
     }
+
+    .markdown-content {
+        font-size: 0.7rem;
+    }
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle; /* alinha com texto se houver */
+;
+}
+
+.hidden {
+    display: none;
 }

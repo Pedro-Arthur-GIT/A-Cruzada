@@ -5,26 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rota B C</title>
 
-        <!-- CSS crítico inline para temas -->
-  <style>
-    /* Esconde todo o conteúdo até o tema ser aplicado */
-    html { visibility: hidden; }
-
-    /* Temas */
-    html.light-mode { background: #f3f3f3; color: #000; }
-    html.dark-mode  { background: #222; color: #eee; }
-
-    /* Evita transições durante o carregamento */
-    html, body { transition: none; }
-  </style>
-
-  <script>
-    (function() {
-      const theme = localStorage.getItem('theme') || 'light';
-      document.documentElement.classList.add(theme + '-mode');
-      document.documentElement.style.visibility = 'visible';
-    })();
-  </script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-H9oy0Yf3kCqTRp5z3iCQ5f3az/xn+xcbh4tOZpN/9Z3ym6/yoG3JpVZ5iV7lXGrX" crossorigin="anonymous">
 
@@ -50,8 +30,8 @@
         
         <!-- Botão de Dark/Light Mode -->
         <button id="toggleButton">
-            <i data-lucide="moon"></i>
-            <i data-lucide="sun" class="hidden"></i>
+            <img class="icon moon hidden" src="../imagens/moon_icon.svg" alt="Lua">
+            <img class="icon sun hidden" src="../imagens/sun_icon.svg" alt="Sol">
         </button>
 
     </div>

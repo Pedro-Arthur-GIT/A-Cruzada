@@ -339,17 +339,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('toggleButton');
     const body = document.body;
 
+    // Seleciona os ícones locais
+    const moonIcon = toggleButton.querySelector('.moon');
+    const sunIcon = toggleButton.querySelector('.sun');
+
     // Função para aplicar tema
     const applyTheme = (theme) => {
         const isDark = theme === 'dark';
         body.classList.toggle('dark-mode', isDark);
 
         // Alterna visibilidade dos ícones
-        const moonIcon = toggleButton.querySelector('[data-lucide="moon"]');
-        const sunIcon = toggleButton.querySelector('[data-lucide="sun"]');
-        moonIcon.classList.toggle('hidden', isDark);
-        sunIcon.classList.toggle('hidden', !isDark);
+        moonIcon.classList.toggle('hidden', isDark); // mostra sol no modo escuro
+        sunIcon.classList.toggle('hidden', !isDark);   // mostra lua no modo claro
 
+        // Salva a preferência
         localStorage.setItem('theme', theme);
     };
 
@@ -361,10 +364,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const newTheme = body.classList.contains('dark-mode') ? 'light' : 'dark';
         applyTheme(newTheme);
     });
-
-    // Inicializa ícones do Lucide
-    if (window.lucide) lucide.replace();
 });
+
 
 
 

@@ -3,30 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG Interativo</title>
+    <title>A Cruzada</title>
 
+        <!-- CSS crítico inline para temas -->
+  <style>
+    /* Esconde todo o conteúdo até o tema ser aplicado */
+    html { visibility: hidden; }
+
+    /* Temas */
+    html.light-mode { background: #f3f3f3; color: #000; }
+    html.dark-mode  { background: #222; color: #eee; }
+
+    /* Evita transições durante o carregamento */
+    html, body { transition: none; }
+  </style>
+
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.classList.add(theme + '-mode');
+      document.documentElement.style.visibility = 'visible';
+    })();
+  </script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-H9oy0Yf3kCqTRp5z3iCQ5f3az/xn+xcbh4tOZpN/9Z3ym6/yoG3JpVZ5iV7lXGrX" crossorigin="anonymous">
 
     <!-- Lucide Icons -->
     <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.min.js"></script>
 
-    <!-- CSS externo -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- CSS externo do projeto -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Opcional: Script do toggle do tema -->
+    <script src="../theme-toggle.js" defer></script>
 </head>
+
 <body>
 
     <div class="navbar">
 
-        <div>
-            <h2>RPG Interativo</h2>
-
-        </div>
-
+        <h2>
+            <a href="../index.html" title="Voltar à página inicial do RPG Interativo">
+                RPG Interativo
+            </a>
+        </h2>
+        
         <!-- Botão de Dark/Light Mode -->
         <button id="toggleButton">
-            <i data-lucide="moon"></i>
-            <i data-lucide="sun" class="hidden"></i>
+            <img class="icon moon hidden" src="imagens/moon_icon.svg" alt="Lua">
+            <img class="icon sun hidden" src="imagens/sun_icon.svg" alt="Sol">
+
         </button>
 
     </div>
@@ -35,13 +61,28 @@
     <!-- Container principal (A4) -->
     <div id="flex-wrapper">
         <div class="main-container">
-            <h1>Welcome to RPG Interativo!</h1>
-            <p>Embark on your adventure. Create your character and explore a world of possibilities!</p>
-            <button class="start-btn" onclick="window.location.href='rotas/inicio.html'">Start Adventure</button>
+        <div class="left-zone"></div>
+        <div class="right-zone"></div>
+            <div class="markdown-content" id="markdownContainer">
+                
+                <h1>A Cruzada</h1>
+                <h3>Bem vindo à história interativa de A Cruzada! </h3>
+                <p>Olá, viajante. Há tempos um dragão implacável aterroriza as terras do reino. Inúmeros guerreiros caíram perante sua fúria. Seu objetivo é trazer o fim ao último dragão vivo.</p>
+                <p>Leia o ambiente ao seu redor, avance sem recuar e decida com sabedoria</p>
+                <button class="start-btn" onclick="location.href='rotas/inicio.html'">Começar a aventura</button>
+
+
+
+            </div>
+            <!-- <div class="pagination-controls">
+                <button class="prev-btn" id="prevBtn">Anterior</button>
+                <button class="next-btn" id="nextBtn">Próxima</button>
+            </div> -->
         </div>
-    </div>    
+    </div> 
 
     <!-- JS externo -->
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
+
