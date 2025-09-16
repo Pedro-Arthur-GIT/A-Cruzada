@@ -76,31 +76,6 @@ h1 {
     font-size: 2rem;
 }
 
-p {
-    margin-bottom: 1.6rem;
-}
-
-.start-btn {
-    display: block;      /* transforma em block */
-    margin: 0.5em auto;
-    width: fit-content;
-    height: fit-content;
-    background: #707070;
-    color: #ffffff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    font-size: clamp(0.6rem, 1vw, 1rem);
-    cursor: pointer;
-    transition: background 0.2s;
-
-
-}
-
-
-.start-btn:hover {
-    background: #3f3f3f;
-}
 
 
 .navbar {
@@ -161,21 +136,23 @@ body.dark-mode .navbar {
 
 .markdown-content {
     font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.6em;
     margin-bottom: 1em;
     text-align: justify;
     color: inherit;
     overflow: hidden; /* necessário para mask */
-    max-height: 75vh;
+    max-height: 85vh;
     padding: 1rem;
     position: relative; /* necessário para a animação */
-    display: block;
+    display: flex;
+    flex-direction: column;
     font-size: 0.9rem;
 }
 
 /* recuo no parágrafo */
 .markdown-content > p {
     text-indent: 2em;
+    margin: 0.5em 0; /* espaçamento entre parágrafos */
 }
 
 .markdown-content p > a {
@@ -193,14 +170,37 @@ body.dark-mode .navbar {
 
 .markdown-content ul {
     font-size: inherit;
-    margin-right: 1em;
-    position: absolute;
-    bottom: 0;         /* empurra para o fundo */
+    justify-content: left;
+    margin-top: auto;
 }
 
+.markdown-content hr {
+  border: none;              /* remove a borda padrão */
+  border-top: 2px solid #aaa; /* cria uma linha */
+  margin: 1em 0;             /* espaço acima e abaixo */
+  width: 100%;               /* ocupa toda a largura */
+}
+
+
+/* Animação com delay incremental para cada paragrafo*/  
 .markdown-content p:nth-child(1) { animation-delay: 0s; }
 .markdown-content p:nth-child(2) { animation-delay: 0.1s; }
 .markdown-content p:nth-child(3) { animation-delay: 0.2s; }
+.markdown-content p:nth-child(4) { animation-delay: 0.3s; }
+.markdown-content p:nth-child(5) { animation-delay: 0.4s; }
+.markdown-content p:nth-child(6) { animation-delay: 0.5s; }
+.markdown-content p:nth-child(7) { animation-delay: 0.6s; }
+.markdown-content p:nth-child(8) { animation-delay: 0.7s; }
+.markdown-content p:nth-child(9) { animation-delay: 0.8s; }
+.markdown-content p:nth-child(10) { animation-delay: 0.9s; }
+.markdown-content p:nth-child(11) { animation-delay: 1s; }
+.markdown-content p:nth-child(12) { animation-delay: 1.1s; }
+.markdown-content p:nth-child(13) { animation-delay: 1.2s; }
+.markdown-content p:nth-child(14) { animation-delay: 1.3s; }
+.markdown-content p:nth-child(15) { animation-delay: 1.4s; }
+
+/* Animação com delay para listas */
+.markdown-content ul:nth-of-type(1) { animation-delay: 1s; }
 
 @keyframes fadeLine {
   to {
@@ -259,4 +259,66 @@ body.dark-mode .navbar {
 
 .hidden {
     display: none;
+}
+
+.cover {
+
+  background-image: url('imagens/flaming_dragon.jpg');
+  background-size: cover; /* cobre toda a área */
+  background-position: center; /* centraliza */
+  background-repeat: no-repeat;
+  flex-direction: column;
+  color: white; /* texto visív el sobre a imagem */
+  text-align: center;
+  padding: 0%;
+}
+
+body.dark-mode .cover {
+  background-image: url('imagens/flaming_dragon.jpg');
+  background-size: cover; /* cobre toda a área */
+  background-position: center; /* centraliza */
+  background-repeat: no-repeat;
+  flex-direction: column;
+  color: white; /* texto visív el sobre a imagem */
+  text-align: center;
+  padding: 0%;
+}
+
+.cover p {
+    color: white;
+    font-size: clamp(12px, 2vw, 16px);
+    background: rgba(0, 0, 0, 0.3); /* fundo semi-transparente para legibilidade */
+    border-radius: 8px;
+    padding: 0.5em;
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.cover h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* sombra para destacar o texto */
+    background: rgba(0, 0, 0, 0.3); /* fundo semi-transparente para legibilidade */
+    border-radius: 8px;
+    padding: 1em 0.5em;
+    margin: 0;
+}
+
+.cover span {
+    font-size: 0.8rem;
+    align-self: center;
+    font-style: italic;
+}
+
+.blank {
+    min-height: 100vh;
+}
+
+.ph3{
+    font-size: 1.17em;
+    text-align: left;
+    font-weight: bold;
+    margin: 1em 0;
+    text-indent: 0 !important; /* sobrescreve o recuo padrão dos parágrafos */
+    color:rgba(61, 113, 255, 1);
 }

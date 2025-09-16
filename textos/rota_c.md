@@ -9,11 +9,11 @@ Por mais que você queira manter sua honra e dar sua vida em prol do sucesso da 
 **Atualização de estado: você fugiu da batalha antes mesmo de ela começar. Sua covardia será lembrada por todos e ninguém jamais o respeitará.** 
 ** Você adquiriu o bilhete da Rota “The Coward”.** 
  
-<h3>TUTORIAL - ATUALIZAÇÃO DE ESTADO</h3> 
+<p class="ph3">TUTORIAL - ATUALIZAÇÃO DE ESTADO</p> 
 
 **Em certas decisões, o texto indicará “atualização de estado”. Isso significa que suas ações causaram uma marca na história e uma decisão futura pode ser bloqueada ou desbloqueada.** 
 **Guarde essa atualização, ela será importante mais à frente.** 
-<h3>FIM DO TUTORIAL</h3> 
+<p class="ph3">FIM DO TUTORIAL</p> 
  
 A mata à sua frente parece estar se aproximando conforme você foge. Sua mente vagou pela imagem de seus companheiros sendo louvados em canções enquanto seu nome ser dito antes que alguém escarrar e cuspir em uma poça de lama. Esse pensamento se desfez quando você concluiu pelos gritos longínquos atrás de você que ninguém sobreviveria para revelar o nome do covarde que abandonou a batalha e deixou seus companheiros para trás. Que diferença você faria, afinal? Você é apenas um único homem, nunca enfrentou nada tão poderoso quanto um dragão, sequer imaginava que fosse possível uma dessas feras voltar a existir nesse mundo onde outrora a paz se fazia tão presente.  
  

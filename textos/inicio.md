@@ -1,23 +1,20 @@
  
- 
+
 <h1>Introdução</h1> 
- -------------------------------------
+<hr>
 *Saudações, ó nobre guerreiro.* 
- 
+
 *Venho por meio dessa mensagem suplicar sua ajuda. Nosso amado reino está sob ataque de Taragorn, o terrível dragão cinzento. Há séculos o último dragão deu seu derradeiro suspiro, porém a praga de hálito incandescente novamente voltou a habitar nossas terras e trouxe consigo apenas morte e desolação.* 
- 
+
 *Essa mensagem será entregue a todas as cidades, vilas e vilarejos do reino na esperança de alcançar os mais bravos e fortes combatentes. Aliste-se no exército de sua Majestade e conquiste a glória de ser o algoz da besta que põe em risco toda a paz e prosperidade que levamos anos para conquistar.* 
- 
+
 *Mas esteja avisado, isso não é um mero jogo, isso é a sua vida. Cada uma de suas escolhas o aproximará ou afastará do triunfo ou da morte. Cada um de seus atos afetará o seguimento de sua jornada. Cada uma de suas ações tem consequências.* 
- 
+
 *Una-se às forças do Rei Karn e lute bravamente contra a besta cinzenta. Contamos com sua espada nessa batalha.* 
- -------------------------------------
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<hr>
+
+
+
  
 <h1>Prólogo</h1> 
  

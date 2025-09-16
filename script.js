@@ -349,8 +349,8 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.toggle('dark-mode', isDark);
 
         // Alterna visibilidade dos ícones
-        moonIcon.classList.toggle('hidden', isDark); // mostra sol no modo escuro
-        sunIcon.classList.toggle('hidden', !isDark);   // mostra lua no modo claro
+        moonIcon.classList.toggle('hidden', isDark); // mostra lua no claro
+        sunIcon.classList.toggle('hidden', !isDark);   // mostra sol no escuro
 
         // Salva a preferência
         localStorage.setItem('theme', theme);
