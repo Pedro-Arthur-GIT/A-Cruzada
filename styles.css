@@ -221,6 +221,10 @@ body.dark-mode .navbar {
     z-index: 10;
 }
 
+.pointer {
+    cursor: pointer !important;
+}
+
 .left-zone {
     left: 0;
 }
@@ -229,11 +233,7 @@ body.dark-mode .navbar {
     right: 0;
 }
 
-/* opcional: para teste, deixa as zonas semi-transparentes */
-/* .left-zone { background: rgba(255,0,0,0.1); }
-.right-zone { background: rgba(0,0,255,0.1); }
-.left-zone:hover { background: rgba(255,0,0,0.2); }
-.right-zone:hover { background: rgba(0,0,255,0.2); } */
+
 
 @media (max-width: 900px) {
     .main-container {

@@ -13,6 +13,8 @@
 *Una-se às forças do Rei Karn e lute bravamente contra a besta cinzenta. Contamos com sua espada nessa batalha.* 
 <hr>
 
+<div class="blank"></div>
+
 
 
  
